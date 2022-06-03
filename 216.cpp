@@ -12,20 +12,6 @@
 
 using namespace std;
 
-int sp[100][100], prov[100], k, n;
-
-void dfs(int j) {
-	if (prov[j]) {
-		return;
-	}
-	prov[j] = 1;
-	k++;
-	for (int i = 0; i < n; ++i) {
-		if (sp[j][i]) {
-			dfs(i);
-		}
-	}
-}
 
 int main() {
     ifstream fin("D:/Desktop/INPUT.txt");
